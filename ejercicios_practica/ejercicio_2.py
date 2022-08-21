@@ -45,5 +45,12 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
-
+    fig= plt.figure()
+    fig.suptitle("Dos Graficos en un cuadro", fontsize=16)
+    ax= fig.add_subplot()
+    ax.plot(y1, label="cuadrado", color="darkgreen")
+    ax.plot (y2,label= "Cubico", color= "yellow")
+    plt.legend()
+    plt.show()
+    plt.grid()
     print("terminamos")

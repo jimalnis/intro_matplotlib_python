@@ -53,5 +53,23 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
-
+    fig=plt.figure()
+    fig.suptitle("4 Gráficos en una figura")
+    ax1=fig.add_subplot(2,2,1)
+    ax2=fig.add_subplot(2,2,2)
+    ax3=fig.add_subplot(2,2,3)
+    ax4=fig.add_subplot(2,2,4)
+    ax1.plot(y1, label= "Cuadrado", color="darkgreen")
+    ax1.legend()
+    ax1.grid()
+    ax2.plot(y2, label="Cubico", color="yellow")
+    ax2.legend()
+    ax2.grid() 
+    ax3.plot(y3, label="Cuarta", color="red")
+    ax3.legend()
+    ax3.grid()
+    ax4.plot(y4, label="raiz cuadrada", color= "black")
+    plt.legend()
+    plt.grid()
+    plt.show()
     print("terminamos")

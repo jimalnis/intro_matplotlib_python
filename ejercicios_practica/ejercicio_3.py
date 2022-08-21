@@ -33,5 +33,11 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
-
+    fig=plt.figure()
+    fig.suptitle("Función Tanh", fontsize=20)
+    ax=fig.add_subplot()
+    ax.scatter(x,y,label="Función Tanh", marker="+")
+    ax.legend(loc="upper left")
+    ax.grid()
+    plt.show()
     print("terminamos")
